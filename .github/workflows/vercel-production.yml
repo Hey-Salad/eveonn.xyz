@@ -1,9 +1,6 @@
-name: Deploy Production
+name: Manual Vercel Production Deploy
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
 
 concurrency:

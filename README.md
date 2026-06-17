@@ -56,7 +56,13 @@ npm run build
 
 This project is designed to deploy to Vercel.
 
-For GitHub Actions based deployment, add these repository secrets:
+Primary CD path:
+
+- Connect the Vercel project to `Hey-Salad/eveonn.xyz`.
+- Push to `main`.
+- Vercel builds and deploys the production branch automatically.
+
+Manual GitHub Actions deployment is also available through `.github/workflows/vercel-production.yml`. To use it, add these repository secrets:
 
 ```txt
 VERCEL_TOKEN
@@ -65,8 +71,6 @@ VERCEL_PROJECT_ID
 ```
 
 `VERCEL_ORG_ID` and `VERCEL_PROJECT_ID` are available in `.vercel/project.json` after `vercel link`, but `.vercel/` must stay untracked.
-
-Production deploys run from pushes to `main` through `.github/workflows/vercel-production.yml`.
 
 ## Auth posture
 
