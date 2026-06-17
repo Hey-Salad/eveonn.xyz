@@ -16,7 +16,7 @@ import {
 import { cn } from "@/lib/utils";
 import { AgentMessage } from "./agent-message";
 
-const AGENT_NAME = "my-agent";
+const AGENT_NAME = "Evelyn";
 const BETA_TERMS_HREF = "https://vercel.com/docs/release-phases/public-beta-agreement";
 
 type AgentStatus = ReturnType<typeof useEveAgent>["status"];
