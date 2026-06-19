@@ -24,40 +24,41 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Grandstander", cursive;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 }
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 
-  /* Eveonn palette — Committed cobalt on pure black */
-  --eo-bg: oklch(0.075 0.000 0);
-  --eo-surface: oklch(0.13 0.008 247);
-  --eo-ink: oklch(0.94 0.004 247);
-  --eo-primary: oklch(0.62 0.140 247);
-  --eo-accent: oklch(0.80 0.155 165);
-  --eo-muted: oklch(0.55 0.008 247);
+  /* Eveonn palette */
+  --eo-cherry: #ed4c4c;
+  --eo-peach: #faa09a;
+  --eo-light-peach: #ffd0cd;
+  --eo-white: #ffffff;
+  --eo-ink: #1a1a1a;
+  --eo-muted: #6b6b6b;
 
-  --background: oklch(0.075 0.000 0);
-  --foreground: oklch(0.94 0.004 247);
-  --card: oklch(0.13 0.008 247);
-  --card-foreground: oklch(0.94 0.004 247);
-  --popover: oklch(0.13 0.008 247);
-  --popover-foreground: oklch(0.94 0.004 247);
-  --primary: oklch(0.62 0.140 247);
-  --primary-foreground: oklch(0.98 0.000 0);
-  --secondary: oklch(0.20 0.012 247);
-  --secondary-foreground: oklch(0.94 0.004 247);
-  --muted: oklch(0.20 0.012 247);
-  --muted-foreground: oklch(0.55 0.008 247);
-  --accent: oklch(0.80 0.155 165);
-  --accent-foreground: oklch(0.15 0.010 165);
-  --destructive: oklch(0.66 0.2 25);
-  --border: oklch(1 0 0 / 8%);
-  --input: oklch(1 0 0 / 10%);
-  --ring: oklch(0.62 0.140 247 / 0.5);
-  --radius: 0.375rem;
+  --background: var(--eo-white);
+  --foreground: var(--eo-ink);
+  --card: var(--eo-light-peach);
+  --card-foreground: var(--eo-ink);
+  --popover: var(--eo-white);
+  --popover-foreground: var(--eo-ink);
+  --primary: var(--eo-cherry);
+  --primary-foreground: var(--eo-white);
+  --secondary: var(--eo-light-peach);
+  --secondary-foreground: var(--eo-ink);
+  --muted: var(--eo-light-peach);
+  --muted-foreground: var(--eo-muted);
+  --accent: var(--eo-peach);
+  --accent-foreground: var(--eo-ink);
+  --destructive: #c43030;
+  --border: #f0e8e7;
+  --input: #f0e8e7;
+  --ring: var(--eo-peach);
+  --radius: 0.75rem;
 }
 
 * {
