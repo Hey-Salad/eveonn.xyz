@@ -12,9 +12,9 @@ import {
 
 export default function Page() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-black">
       {/* Nav */}
-      <nav className="fixed top-0 right-0 left-0 z-40 border-b border-[var(--border)] bg-white/90 backdrop-blur-md">
+      <nav className="fixed top-0 right-0 left-0 z-40 border-b border-[var(--border)] bg-black/90 backdrop-blur-md">
         <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-5">
           <a
             className="font-[family-name:var(--font-display)] text-lg font-700 tracking-tight text-[var(--eo-ink)]"
@@ -54,7 +54,7 @@ export default function Page() {
           className="pointer-events-none absolute top-0 right-0 left-0 h-[500px]"
           style={{
             background:
-              "linear-gradient(180deg, var(--eo-light-peach) 0%, transparent 100%)",
+              "radial-gradient(ellipse at center top, rgba(237,76,76,0.12) 0%, transparent 60%)",
           }}
         />
 
@@ -62,7 +62,7 @@ export default function Page() {
           <div className="grid items-center gap-14 lg:grid-cols-[1fr_420px]">
             <div>
               {/* Status */}
-              <div className="mb-6 inline-flex items-center gap-2.5 rounded-full border border-[var(--eo-peach)] bg-[var(--eo-light-peach)] px-3.5 py-1.5 text-xs font-600 text-[var(--eo-cherry)]">
+              <div className="mb-6 inline-flex items-center gap-2.5 rounded-full border border-[var(--eo-cherry)]/30 bg-[var(--eo-cherry)]/10 px-3.5 py-1.5 text-xs font-600 text-[var(--eo-cherry)]">
                 <span className="relative flex h-2 w-2">
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[var(--eo-cherry)] opacity-60" />
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-[var(--eo-cherry)]" />
@@ -96,7 +96,7 @@ export default function Page() {
                   Talk to Evelyn
                 </a>
                 <a
-                  className="inline-flex items-center gap-2 rounded-full border border-[var(--border)] bg-white px-5 py-3 text-sm font-600 text-[var(--eo-ink)] transition-colors hover:bg-[var(--eo-light-peach)]"
+                  className="inline-flex items-center gap-2 rounded-full border border-[var(--border)] bg-black px-5 py-3 text-sm font-600 text-[var(--eo-ink)] transition-colors hover:bg-[var(--eo-light-peach)]"
                   href="https://github.com/Hey-Salad/eveonn.xyz"
                 >
                   <GitFork className="h-4 w-4" />
@@ -106,8 +106,8 @@ export default function Page() {
             </div>
 
             {/* Terminal preview */}
-            <div className="overflow-hidden rounded-2xl border border-[var(--border)] bg-white shadow-lg shadow-[var(--eo-peach)]/20">
-              <div className="flex items-center gap-3 border-b border-[var(--border)] bg-[var(--eo-light-peach)]/50 px-4 py-3">
+            <div className="overflow-hidden rounded-2xl border border-[var(--border)] bg-black shadow-lg shadow-[var(--eo-peach)]/20">
+              <div className="flex items-center gap-3 border-b border-[var(--border)] bg-white/5 px-4 py-3">
                 <div className="flex gap-1.5">
                   <span className="h-3 w-3 rounded-full bg-[var(--eo-cherry)]" />
                   <span className="h-3 w-3 rounded-full bg-[var(--eo-peach)]" />
@@ -194,7 +194,7 @@ export default function Page() {
               },
             ].map(({ icon: Icon, name, title, body }) => (
               <div
-                className="rounded-2xl border border-[var(--border)] bg-[var(--eo-light-peach)]/30 p-7 transition-colors hover:bg-[var(--eo-light-peach)]/60"
+                className="rounded-2xl border border-[var(--border)] bg-[var(--eo-surface)] p-7 transition-colors hover:bg-white/[0.07]"
                 key={name}
               >
                 <div className="flex items-center gap-3">
@@ -228,7 +228,7 @@ export default function Page() {
       </section>
 
       {/* How it works */}
-      <section className="border-t border-[var(--border)] bg-[var(--eo-light-peach)]/30">
+      <section className="border-t border-[var(--border)] bg-[var(--eo-surface)]">
         <div className="mx-auto max-w-6xl px-5 py-20 sm:py-24">
           <h2
             className="font-[family-name:var(--font-display)] text-[clamp(1.75rem,4vw,2.75rem)] font-700 leading-tight tracking-tight text-[var(--eo-ink)]"
@@ -238,8 +238,8 @@ export default function Page() {
           </h2>
 
           <div className="mt-12 grid gap-10 lg:grid-cols-[1fr_1fr]">
-            <div className="overflow-hidden rounded-2xl border border-[var(--border)] bg-white font-mono text-sm shadow-sm">
-              <div className="border-b border-[var(--border)] bg-[var(--eo-light-peach)]/40 px-5 py-3">
+            <div className="overflow-hidden rounded-2xl border border-[var(--border)] bg-black font-mono text-sm shadow-sm">
+              <div className="border-b border-[var(--border)] bg-white/5 px-5 py-3">
                 <div className="flex items-center gap-2 text-xs text-[var(--eo-muted)]">
                   <Terminal className="h-3.5 w-3.5" />
                   terminal
@@ -308,7 +308,7 @@ export default function Page() {
               Deploy Your Own
             </a>
             <a
-              className="inline-flex items-center gap-2 rounded-full border border-[var(--border)] bg-white px-5 py-3 text-sm font-600 text-[var(--eo-ink)] transition-colors hover:bg-[var(--eo-light-peach)]"
+              className="inline-flex items-center gap-2 rounded-full border border-[var(--border)] bg-black px-5 py-3 text-sm font-600 text-[var(--eo-ink)] transition-colors hover:bg-[var(--eo-light-peach)]"
               href="https://github.com/Hey-Salad/eveonn.xyz"
             >
               <GitFork className="h-4 w-4" />

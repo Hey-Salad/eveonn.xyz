@@ -30,33 +30,34 @@
 }
 
 :root {
-  color-scheme: light;
+  color-scheme: dark;
 
   /* Eveonn palette */
   --eo-cherry: #ed4c4c;
   --eo-peach: #faa09a;
   --eo-light-peach: #ffd0cd;
-  --eo-white: #ffffff;
-  --eo-ink: #1a1a1a;
-  --eo-muted: #6b6b6b;
+  --eo-bg: #000000;
+  --eo-ink: #ffffff;
+  --eo-muted: #888888;
+  --eo-surface: #111111;
 
-  --background: var(--eo-white);
+  --background: var(--eo-bg);
   --foreground: var(--eo-ink);
-  --card: var(--eo-light-peach);
+  --card: var(--eo-surface);
   --card-foreground: var(--eo-ink);
-  --popover: var(--eo-white);
+  --popover: var(--eo-surface);
   --popover-foreground: var(--eo-ink);
   --primary: var(--eo-cherry);
-  --primary-foreground: var(--eo-white);
-  --secondary: var(--eo-light-peach);
+  --primary-foreground: #ffffff;
+  --secondary: var(--eo-surface);
   --secondary-foreground: var(--eo-ink);
-  --muted: var(--eo-light-peach);
+  --muted: var(--eo-surface);
   --muted-foreground: var(--eo-muted);
   --accent: var(--eo-peach);
-  --accent-foreground: var(--eo-ink);
+  --accent-foreground: #000000;
   --destructive: #c43030;
-  --border: #f0e8e7;
-  --input: #f0e8e7;
+  --border: #222222;
+  --input: #222222;
   --ring: var(--eo-peach);
   --radius: 0.75rem;
 }
